@@ -17,7 +17,7 @@ function Home() {
       let repositories = response.data
       let repositoriesName = []
       repositories.map(repository => {
-        repositoriesName.push(repository.name)
+        return repositoriesName.push(repository.name)
       })
       localStorage.setItem('repositoriesName', JSON.stringify(repositoriesName));
       history.push('/repositories')

@@ -18,7 +18,7 @@ function Repositories () {
             history.push('/')
         }
         
-    },[])
+    },[history])
   
 
     return (
